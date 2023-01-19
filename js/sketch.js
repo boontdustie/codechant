@@ -12,8 +12,12 @@ function preload(){
   myDictionary = loadJSON("js/data/words_dictionary.json");
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(300, 300);
+  createCanvas(windowWidth, windowHeight);
   background(0);
   textSize(32);
   textAlign(CENTER);
