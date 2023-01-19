@@ -13,7 +13,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(2000, 1500);
+  createCanvas(300, 300);
   background(0);
   textSize(32);
   textAlign(CENTER);
