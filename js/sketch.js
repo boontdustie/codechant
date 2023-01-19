@@ -50,10 +50,9 @@ function draw() {
     text(word, random(width), random(height));
 
     let freq = random(200, 800);
-    let amp = random(0.1, 0.5);
 
     osc.freq(freq);
-    osc.amp(amp);
+    osc.amp(0.1);
 
     //speech.setVoice('SpeechSynthesisVoice');
     speech.setVoice(floor(29*random()+0.5));
