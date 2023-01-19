@@ -52,7 +52,7 @@ function draw() {
     let freq = random(200, 800);
 
     osc.freq(freq);
-    osc.amp(0.1);
+    osc.amp(0.001);
 
     //speech.setVoice('SpeechSynthesisVoice');
     speech.setVoice(floor(29*random()+0.5));
