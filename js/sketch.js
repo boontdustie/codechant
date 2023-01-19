@@ -12,12 +12,8 @@ function preload(){
   myDictionary = loadJSON("js/data/words_dictionary.json");
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(2000, 1500);
   background(0);
   textSize(32);
   textAlign(CENTER);
@@ -56,7 +52,7 @@ function draw() {
     let freq = random(200, 800);
 
     osc.freq(freq);
-    osc.amp(0.001);
+    osc.amp(0.01);
 
     //speech.setVoice('SpeechSynthesisVoice');
     speech.setVoice(floor(29*random()+0.5));
