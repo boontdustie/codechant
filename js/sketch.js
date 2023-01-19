@@ -13,7 +13,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(2000, 1500);
+  createCanvas(window.innerWidth, window.innerHeight);
   background(0);
   textSize(32);
   textAlign(CENTER);
@@ -36,6 +36,9 @@ function setup() {
   }
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 function draw() {
   let keys = Object.keys(myDictionary);
